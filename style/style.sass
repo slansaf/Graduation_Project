@@ -1,0 +1,87 @@
+$colorSelectSite: #EFB7B7
+$widthSite: 800px
+$backgroundColor: #e5e5e5
+
+body
+    background-color: $backgroundColor
+
+.center
+    padding-left: calc( 50% - #{$widthSite / 2} )
+    padding-right: calc( 50% - #{$widthSite / 2} )
+
+.header
+    display: flex
+    flex-direction: row
+    align-items: center
+    gap: 14px
+    &__block
+        padding: 19px 0 10px 0
+    &__contacts
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        gap: 11px
+        &_item
+            border: 1px solid $colorSelectSite
+            width: 35px
+            margin-left: 11px
+    &__logo
+        width: 53px
+        border-radius: 5px
+
+.hero
+    height: 582px
+    background: url('/img/main-img.jpg') no-repeat
+    background-position: center
+    &__title
+        color: rgb(255, 255, 255)
+        font-size: 48px
+        font-weight: 400
+        line-height: 115.9%
+        text-align: left
+        padding-top: 191px
+    &__icons
+        padding-top: 46px
+        display: flex
+        gap: 30px
+    &__icon:hover path
+        fill: #f7f0f0
+
+.discount
+    margin-top: 42px
+    &__title
+        color: rgb(239, 183, 183)
+        font-size: 24px
+        font-weight: 400
+        line-height: 115.9%
+        text-align: center
+    &__form
+        display: flex
+        flex-direction: column
+        align-items: center
+        gap: 28px
+        padding-top: 19px
+    &__name
+        color: rgb(206, 206, 206)
+        font-size: 15px
+        font-weight: 400
+        line-height: 115.9%
+        text-align: left 
+        display: flex
+        gap: 23px
+        
+    &__text
+        border-bottom: 1px solid #000
+
+    &__button
+        border-radius: 30px
+        box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.3)
+        background: rgb(239, 183, 183)
+        color: rgb(0, 0, 0)
+        font-size: 15px
+        font-weight: 400
+        line-height: 115.9%
+        text-align: center
+        padding: 10px
+    
