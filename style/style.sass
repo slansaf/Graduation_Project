@@ -1,6 +1,4 @@
-$colorSelectSite: #EFB7B7
-$widthSite: 800px
-$backgroundColor: #e5e5e5
+@import 'vars'
 
 body
     background-color: $backgroundColor
@@ -50,8 +48,9 @@ body
 
 .discount
     margin-top: 42px
+    margin-bottom: 42px
     &__title
-        color: rgb(239, 183, 183)
+        color: $colorSelectSite
         font-size: 24px
         font-weight: 400
         line-height: 115.9%
@@ -85,3 +84,159 @@ body
         text-align: center
         padding: 10px
     
+.services
+    margin-bottom: 60px
+    &__title
+        color: $colorSelectSite
+        font-size: 48px
+        font-weight: 400
+        line-height: 93.9%
+        text-align: left
+    &__grid
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: 1fr 1fr
+        gap: 20px
+        padding-top: 30px
+
+.service
+    &__item
+        box-shadow: 3px 5px 3px 0px rgba(0, 0, 0, 0.3)
+    &__name
+        color: rgb(0, 0, 0)
+        font-size: 18px
+        font-weight: 400
+        line-height: 93.9%
+        text-align: center
+        padding-top: 12px
+        padding-bottom: 12px
+    &__image
+        width: 100%
+
+.interior
+    margin-bottom: 60px
+    &__title
+        color: $colorSelectSite
+        font-size: 48px
+        font-weight: 400
+        line-height: 93.9%
+        text-align: left
+        padding-bottom: 37px
+    &__gallery
+        display: grid
+        grid-template-columns: 1fr 2fr
+        grid-template-rows: auto auto
+        gap: 20px
+    &__image
+        width: 100%
+        height: 250px
+
+    &__item1 
+        grid-column: 1
+
+    &__item2 
+        grid-column: 2
+
+    &__item3 
+        grid-column: 1
+
+    &__item4
+        grid-column: 2
+        grid-row: 2
+
+.products-slider
+    margin-bottom: 60px
+   
+    &__carousel
+        display: flex
+        flex-direction: row
+        gap: 20px
+        padding-bottom: 30px
+        margin-left: -65px
+        margin-right: -65px
+    &__title
+        color: $colorSelectSite
+        font-size: 48px
+        font-weight: 400
+        line-height: 93.9%
+        text-align: left
+        padding-bottom: 37px
+    &__title-signature
+        font-size: 24px
+    &__button
+        border-radius: 30px
+        box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.3)
+        background: rgb(239, 183, 183)
+        color: rgb(0, 0, 0)
+        font-size: 15px
+        font-weight: 400
+        line-height: 115.9%
+        text-align: center
+        padding: 10px
+        
+.product
+    &__slide
+        display: flex
+        flex-direction: column
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
+        background: rgb(255, 255, 255)
+        padding: 6px 5px 18px 11px
+    &__price
+        color: rgb(0, 0, 0)
+        font-size: 20px
+        font-weight: 500
+        line-height: 93.9%
+        text-align: left
+        margin: 12px 0 12px
+    &__image
+    &__name
+        color: rgb(167, 167, 167)
+        font-size: 15px
+        font-weight: 400
+        line-height: 93.9%
+        text-align: left
+    &__description
+        color: rgb(0, 0, 0)
+        font-size: 15px
+        font-weight: 400
+        line-height: 98%
+        text-align: left
+        margin: 4px 0 18px 0
+          
+    &__button
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25)
+        background: rgb(239, 183, 183)
+        padding: 4px
+        width: 140px
+        text-align: center
+
+.masters
+    margin-bottom: 60px
+    &__title
+        color: $colorSelectSite
+        font-size: 48px
+        font-weight: 400
+        line-height: 93.9%
+        text-align: left
+        padding-bottom: 37px  
+
+.master
+    display: flex
+    flex-direction: column
+    &__link
+        
+        font-size: 14px
+        font-weight: 400
+        line-height: 115.9%
+        text-align: left
+        & a  
+            color: rgb(0, 0, 0)
+.contacts
+    margin-bottom: 60px
+    &__title
+        color: $colorSelectSite
+        font-size: 48px
+        font-weight: 400
+        line-height: 93.9%
+        text-align: left
+        padding-bottom: 37px 
