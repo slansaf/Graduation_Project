@@ -1,370 +1,365 @@
 @import 'vars'
 
 @font-face 
-    font-family: "Lobster"
-    src: url("/fonts/Lobster.woff2") format("woff2"), url("/fonts/Lobster.woff") format("woff")
-    font-display: swap
+   font-family: "Lobster"
+   src: url("../fonts/Lobster.woff2") format("woff2"), url("../fonts/Lobster.woff") format("woff")
+   font-display: swap
 	
 @font-face 
-    font-family: "ClassicaOne"
-    src: url("/fonts/ClassicaOne.woff2") format("woff2"), url("/fonts/ClassicaOne.woff") format("woff")
-    font-weight: bolder
+   font-family: "ClassicaOne"
+   src: url("../fonts/ClassicaOne.woff2") format("woff2"), url("../fonts/ClassicaOne.woff") format("woff")
+   font-weight: bolder
 
 @font-face 
-    font-family: 'KudryashevDisplay'
-    src: url('/fonts/KudryashevDisplay.woff2') format('woff2'), url('/fonts/KudryashevDisplay.woff') format('woff'),
-    font-weight: 500
-    font-style: normal
+   font-family: 'KudryashevDisplay'
+   src: url('../fonts/KudryashevDisplay.woff2') format('woff2'), url('../fonts/KudryashevDisplay.woff') format('woff'),
+   font-weight: 500
+   font-style: normal
 
 @font-face 
-    font-family: 'Montserrat'
-    src: url('/fonts/Montserrat-Regular.woff2') format('woff2'), url('/fonts/Montserrat-Regular.woff') format('woff'),
-    font-weight: normal
-    font-style: normal
+   font-family: 'Montserrat'
+   src: url('../fonts/Montserrat-Regular.woff2') format('woff2'), url('../fonts/Montserrat-Regular.woff') format('woff'),
+   font-weight: normal
+   font-style: normal
 
 body
-    background-color: $backgroundColor
-    font-family: Montserrat
+   background-color: $backgroundColor
+   font-family: Montserrat
 
 .center
-    padding-left: calc( 50% - #{$widthSite / 2} )
-    padding-right: calc( 50% - #{$widthSite / 2} )
+   padding-left: calc( 50% - $widthSite / 2 )
+   padding-right: calc( 50% - $widthSite / 2 )
 
 .header
-    display: flex
-    flex-direction: row
-    align-items: center
-    gap: 14px
-    &__block
-        padding: 19px 0 10px 0
-    &__contacts
-        display: flex
-        flex-direction: row
-        justify-content: space-between
-        align-items: center
-        gap: 11px
-        &_item
-            border: 1px solid $colorSelectSite
-            width: 35px
-            margin-left: 11px
-    &__logo
-        width: 53px
-        border-radius: 5px
+   display: flex
+   flex-direction: row
+   align-items: center
+   gap: 14px
+   &__block
+      padding: 19px 0 10px 0
+   &__contacts
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      align-items: center
+      gap: 11px
+      &_item
+         border: 1px solid $colorSelectSite
+         width: 35px
+         margin-left: 11px
+   &__logo
+      width: 53px
+      border-radius: 5px
 
 .hero
-    height: 582px
-    background: url('/img/main-img.jpg') no-repeat
-    background-position: center
-    &__title
-        color: rgb(255, 255, 255)
-        font-family: ClassicaOne
-        font-size: 48px
-        font-weight: 600
-        line-height: 115.9%
-        text-align: left
-        padding-top: 191px
-    &__icons
-        padding-top: 46px
-        display: flex
-        gap: 30px
-    &__icon:hover path
-        fill: #f7f0f0
+   height: 582px
+   background: url('../img/main-img.jpg') no-repeat
+   background-position: center
+   &__title
+      color: rgb(255, 255, 255)
+      font-family: ClassicaOne
+      font-size: 48px
+      font-weight: 600
+      line-height: 115.9%
+      text-align: left
+      padding-top: 191px
+   &__icons
+      padding-top: 46px
+      display: flex
+      gap: 30px
+   &__icon:hover path
+      fill: #f7f0f0
 
 .discount
-    margin-top: 42px
-    margin-bottom: 42px
-    &__title
-        color: $colorSelectSite
-    
-        font-size: 24px
-        font-weight: 400
-        line-height: 115.9%
-        text-align: center
-    &__form
-        display: flex
-        flex-direction: column
-        align-items: center
-        gap: 28px
-        padding-top: 19px
-    &__name
-        color: rgb(206, 206, 206)
-        font-size: 15px
-        font-weight: 400
-        line-height: 115.9%
-        text-align: left 
-        display: flex
-        gap: 23px
-        
-    &__text
-        border-bottom: 1px solid #000
+   margin-top: 42px
+   margin-bottom: 42px
+   &__title
+      color: $colorSelectSite  
+      font-size: 24px
+      font-weight: 400
+      line-height: 115.9%
+      text-align: center
+   &__form
+      display: flex
+      flex-direction: column
+      align-items: center
+      gap: 28px
+      padding-top: 19px
+   &__name
+      color: rgb(206, 206, 206)
+      font-size: 15px
+      font-weight: 400
+      line-height: 115.9%
+      text-align: left 
+      display: flex
+      gap: 23px
 
-    &__button
-        border-radius: 30px
-        box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.3)
-        background: rgb(239, 183, 183)
-        color: rgb(0, 0, 0)
-        font-size: 15px
-        font-weight: 400
-        line-height: 115.9%
-        text-align: center
-        padding: 10px 0 10px 0
-        width: 200px
-    
+   &__text
+      border-bottom: 1px solid #000
+
+   &__button
+      border-radius: 30px
+      box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.3)
+      background: rgb(239, 183, 183)
+      color: rgb(0, 0, 0)
+      font-size: 15px
+      font-weight: 400
+      line-height: 115.9%
+      text-align: center
+      padding: 10px 0 10px 0
+      width: 200px
+
 .services
-    margin-bottom: 60px
-    &__title
-        color: $colorSelectSite
-        font-family: KudryashevDisplay
-        font-size: 48px
-        font-weight: 400
-        line-height: 93.9%
-        text-align: left
-    &__grid
-        display: grid
-        grid-template-columns: 1fr 1fr
-        grid-template-rows: 1fr 1fr
-        gap: 20px
-        padding-top: 30px
+   margin-bottom: 60px
+   &__title
+      color: $colorSelectSite
+      font-family: KudryashevDisplay
+      font-size: 48px
+      font-weight: 400
+      line-height: 93.9%
+      text-align: left
+   &__grid
+      display: grid
+      grid-template-columns: 1fr 1fr
+      grid-template-rows: 1fr 1fr
+      gap: 20px
+      padding-top: 30px
 
 .service
-    &__item
-        box-shadow: 3px 5px 3px 0px rgba(0, 0, 0, 0.3)
-    &__name
-        color: rgb(0, 0, 0)
-        font-size: 18px
-        font-weight: 400
-        line-height: 93.9%
-        text-align: center
-        padding-top: 12px
-        padding-bottom: 12px
-    &__image
-        width: 100%
+   &__item
+      box-shadow: 3px 5px 3px 0px rgba(0, 0, 0, 0.3)
+   &__name
+      color: rgb(0, 0, 0)
+      font-size: 18px
+      font-weight: 400
+      line-height: 93.9%
+      text-align: center
+      padding-top: 12px
+      padding-bottom: 12px
+   &__image
+      width: 100%
 
 .interior
-    margin-bottom: 60px
-    &__title
-        color: $colorSelectSite
-        font-family: KudryashevDisplay
-        font-size: 48px
-        font-weight: 400
-        line-height: 93.9%
-        text-align: left
-        padding-bottom: 37px
-    &__gallery
-        display: grid
-        grid-template-columns: 1fr 2fr
-        grid-template-rows: auto auto
-        gap: 20px
-    &__image
-        width: 100%
-        height: 250px
+   margin-bottom: 60px
+   &__title
+      color: $colorSelectSite
+      font-family: KudryashevDisplay
+      font-size: 48px
+      font-weight: 400
+      line-height: 93.9%
+      text-align: left
+      padding-bottom: 37px
+   &__gallery
+      display: grid
+      grid-template-columns:  repeat(3, 1fr)
+      grid-template-rows: repeat(2, 1fr)
+      gap: 20px
+   &__image
+      width: 100%
+      height: 350px
 
-    &__item1 
-        grid-column: 1
+   &__item2 
+      grid-column: span 2 / span 2
 
-    &__item2 
-        grid-column: 2
+   &__item3 
+      grid-column: span 2 / span 2
+      grid-row-start: 2
 
-    &__item3 
-        grid-column: 1
-
-    &__item4
-        grid-column: 2
-        grid-row: 2
+   &__item4
+      grid-column-start: 3
+      grid-row-start: 2
 
 .products-slider
-    margin-bottom: 60px
- 
-    &__carousel
-        display: flex
-        flex-direction: row
-        gap: 20px
-        padding-bottom: 30px
-        margin-left: -65px
-        margin-right: -65px
-    &__title
-        color: $colorSelectSite
-        font-family: KudryashevDisplay
-        font-size: 48px
-        font-weight: 400
-        line-height: 93.9%
-        text-align: left
-        padding-bottom: 37px
-    &__title-signature
-        font-size: 24px
-    &__button
-        border-radius: 30px
-        box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.3)
-        background: rgb(239, 183, 183)
-        color: rgb(0, 0, 0)
-        font-size: 15px
-        font-weight: 400
-        line-height: 115.9%
-        text-align: center
-        padding: 10px 0px 10px 0px
-        width: 200px
-        display: block
-        margin: 0 auto
-        
+   margin-bottom: 60px
+
+   &__carousel
+      display: flex
+      flex-direction: row
+      gap: 20px
+      padding-bottom: 30px
+      margin-left: -65px
+      margin-right: -65px
+   &__title
+      color: $colorSelectSite
+      font-family: KudryashevDisplay
+      font-size: 48px
+      font-weight: 400
+      line-height: 93.9%
+      text-align: left
+      padding-bottom: 37px
+   &__title-signature
+      font-size: 24px
+   &__button
+      border-radius: 30px
+      box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.3)
+      background: rgb(239, 183, 183)
+      color: rgb(0, 0, 0)
+      font-size: 15px
+      font-weight: 400
+      line-height: 115.9%
+      text-align: center
+      padding: 10px 0px 10px 0px
+      width: 200px
+      display: block
+      margin: 0 auto
+
 .product
-    &__slide
-        display: flex
-        flex-direction: column
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
-        background: rgb(255, 255, 255)
-        padding: 6px 5px 18px 11px
-    &__price
-        color: rgb(0, 0, 0)
-        font-size: 20px
-        font-weight: 500
-        line-height: 93.9%
-        text-align: left
-        margin: 12px 0 12px
-    &__image
-    &__name
-        color: rgb(167, 167, 167)
-        font-size: 15px
-        font-weight: 400
-        line-height: 93.9%
-        text-align: left
-    &__description
-        color: rgb(0, 0, 0)
-        font-size: 15px
-        font-weight: 600
-        line-height: 110%
-        text-align: left
-        margin: 4px 0 18px 0
-          
-    &__button
-        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25)
-        background: rgb(239, 183, 183)
-        padding: 4px
-        width: 140px
-        text-align: center
+   &__slide
+      display: flex
+      flex-direction: column
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
+      background: rgb(255, 255, 255)
+      padding: 6px 5px 18px 11px
+   &__price
+      color: rgb(0, 0, 0)
+      font-size: 20px
+      font-weight: 500
+      line-height: 93.9%
+      text-align: left
+      margin: 12px 0 12px
+   &__name
+      color: rgb(167, 167, 167)
+      font-size: 15px
+      font-weight: 400
+      line-height: 93.9%
+      text-align: left
+   &__description
+      color: rgb(0, 0, 0)
+      font-size: 15px
+      font-weight: 600
+      line-height: 110%
+      text-align: left
+      margin: 4px 0 18px 0
+
+   &__button
+      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25)
+      background: rgb(239, 183, 183)
+      padding: 4px
+      width: 140px
+      text-align: center
 
 .masters-main
-    margin-bottom: 100px
+   margin-bottom: 100px
 
 .masters
-    margin-bottom: 60px
-    display: flex
-    gap: 20px
-    &__left
-        display: flex
-        flex-direction: column
-        justify-content: space-between
-        width: 588px
-    &__list
-        display: flex
-        gap: 20px
-    &__item
-        width: 550px
+   margin-bottom: 60px
+   display: flex
+   gap: 20px
+   &__left
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      width: 588px
+   &__list
+      display: flex
+      gap: 20px
+   &__item
+      width: 550px
 .master
-    &__menu
-        padding-left: 95px 
-        display: flex
-        flex-direction: column
-        gap: 13px
-    &__link
-        border-bottom: 1px solid $colorSelectSite
-        font-size: 14px
-        font-weight: 600
-        line-height: 115.9%
-     
-        & a  
+   &__menu
+      padding-left: 95px 
+      display: flex
+      flex-direction: column
+      gap: 13px
+   &__link
+      border-bottom: 1px solid $colorSelectSite
+      font-size: 14px
+      font-weight: 600
+      line-height: 115.9%
+   
+      & a  
             color: rgb(0, 0, 0)
-    &__title
-        color: $colorSelectSite
-        font-family: KudryashevDisplay
-        font-size: 48px
-        line-height: 93.9%
-        text-align: left
-        padding-bottom: 37px
-    &__name
-        color: $colorSelectSite
-        font-family: KudryashevDisplay
-        font-size: 24px
-        padding-bottom: 15px
-        text-align: left
-    &__experience
-        font-size: 11px
-        font-weight: 600
-        letter-spacing: 0%
-        text-align: left
-        padding-bottom: 43px
-    &__info
-        font-size: 14px
-        font-weight: 600
-        text-align: left
+   &__title
+      color: $colorSelectSite
+      font-family: KudryashevDisplay
+      font-size: 48px
+      line-height: 93.9%
+      text-align: left
+      padding-bottom: 37px
+   &__name
+      color: $colorSelectSite
+      font-family: KudryashevDisplay
+      font-size: 24px
+      padding-bottom: 15px
+      text-align: left
+   &__experience
+      font-size: 11px
+      font-weight: 600
+      letter-spacing: 0%
+      text-align: left
+      padding-bottom: 43px
+   &__info
+      font-size: 14px
+      font-weight: 600
+      text-align: left
 
 .reviews
-    margin-bottom: 30px
-    & .show
-        display: block
-        opacity: 1
-    &__main
-        display: none
-        position: fixed
-        z-index: 1 
-        left: 0
-        top: 0
-        width: 100%
-        height: 100%
-        overflow: auto
-        opacity: 0 
-        transition: opacity 0.5s ease 
+   margin-bottom: 30px
+   & .show
+      display: block
+      opacity: 1
+   &__main
+      display: none
+      position: fixed
+      z-index: 1 
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      overflow: auto
+      opacity: 0 
+      transition: opacity 0.5s ease 
 
-    &__close 
-        color: $colorSelectSite
-        float: right
-        font-size: 28px
-        font-weight: bold
-        &:hover
-            color: #bc3817
-            cursor: pointer   
-    &__button
-        border: 1px solid 
-        &:hover
-            border: 2px solid #c32424
+   &__close 
+      color: $colorSelectSite
+      float: right
+      font-size: 28px
+      font-weight: bold
+      &:hover
+         color: #bc3817
+         cursor: pointer   
+   &__button
+      border: 1px solid 
+      &:hover
+         border: 2px solid #c32424
 
 .contacts
-    margin-bottom: 60px
-    display: flex
-    align-items: center
-    justify-content: space-between
-    gap: 20px
-    &__title
-        color: $colorSelectSite
-        font-family: KudryashevDisplay
-        font-size: 48px
-        font-weight: 400
-        line-height: 93.9%
-        text-align: left
-        padding-bottom: 37px 
-    &__items
-        display: grid
-        grid-template-columns: 1fr 1fr
-        grid-template-rows: 1fr 1fr
-        gap: 20px
-        & h3
-            font-size: 14px
-            font-weight: 700
-            line-height: 110%
-            text-align: left
-        & p
-            font-size: 13px
-            font-weight: 400
-            line-height: 20px
-            text-align: left
-            padding-top: 10px
-
-    &__icons
-        display: flex
-        flex-direction: row
-        gap: 23px
-        padding-top: 10px
-    &__map
-        box-sizing: border-bo
-        border: 6px solid $colorSelectSite
-        width: 500px
-        position: relative
+   margin-bottom: 60px
+   display: flex
+   align-items: center
+   justify-content: space-between
+   gap: 20px
+   &__title
+      color: $colorSelectSite
+      font-family: KudryashevDisplay
+      font-size: 48px
+      font-weight: 400
+      line-height: 93.9%
+      text-align: left
+      padding-bottom: 37px 
+   &__items
+      display: grid
+      grid-template-columns: 1fr 1fr
+      grid-template-rows: 1fr 1fr
+      gap: 20px
+      & h3
+         font-size: 14px
+         font-weight: 700
+         line-height: 110%
+         text-align: left
+      & p
+         font-size: 13px
+         font-weight: 400
+         line-height: 20px
+         text-align: left
+         padding-top: 10px
+   &__icons
+      display: flex
+      flex-direction: row
+      gap: 23px
+      padding-top: 10px
+   &__map
+      box-sizing: border-bo
+      border: 6px solid $colorSelectSite
+      width: 500px
+      position: relative
