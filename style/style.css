@@ -1,10 +1,33 @@
+@font-face {
+  font-family: "Lobster";
+  src: url("/fonts/Lobster.woff2") format("woff2"), url("/fonts/Lobster.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "ClassicaOne";
+  src: url("/fonts/ClassicaOne.woff2") format("woff2"), url("/fonts/ClassicaOne.woff") format("woff");
+  font-weight: bolder;
+}
+@font-face {
+  font-family: "KudryashevDisplay";
+  src: url("/fonts/KudryashevDisplay.woff2") format("woff2"), url("/fonts/KudryashevDisplay.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Regular.woff2") format("woff2"), url("/fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   background-color: #e5e5e5;
+  font-family: Montserrat;
 }
 
 .center {
-  padding-left: calc(50% - 400px);
-  padding-right: calc(50% - 400px);
+  padding-left: calc(50% - 450px);
+  padding-right: calc(50% - 450px);
 }
 
 .header {
@@ -40,8 +63,9 @@ body {
 }
 .hero__title {
   color: rgb(255, 255, 255);
+  font-family: ClassicaOne;
   font-size: 48px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 115.9%;
   text-align: left;
   padding-top: 191px;
@@ -94,7 +118,8 @@ body {
   font-weight: 400;
   line-height: 115.9%;
   text-align: center;
-  padding: 10px;
+  padding: 10px 0 10px 0;
+  width: 200px;
 }
 
 .services {
@@ -102,6 +127,7 @@ body {
 }
 .services__title {
   color: #dd9a9a;
+  font-family: KudryashevDisplay;
   font-size: 48px;
   font-weight: 400;
   line-height: 93.9%;
@@ -136,6 +162,7 @@ body {
 }
 .interior__title {
   color: #dd9a9a;
+  font-family: KudryashevDisplay;
   font-size: 48px;
   font-weight: 400;
   line-height: 93.9%;
@@ -179,6 +206,7 @@ body {
 }
 .products-slider__title {
   color: #dd9a9a;
+  font-family: KudryashevDisplay;
   font-size: 48px;
   font-weight: 400;
   line-height: 93.9%;
@@ -197,7 +225,10 @@ body {
   font-weight: 400;
   line-height: 115.9%;
   text-align: center;
-  padding: 10px;
+  padding: 10px 0px 10px 0px;
+  width: 200px;
+  display: block;
+  margin: 0 auto;
 }
 
 .product__slide {
@@ -225,8 +256,8 @@ body {
 .product__description {
   color: rgb(0, 0, 0);
   font-size: 15px;
-  font-weight: 400;
-  line-height: 98%;
+  font-weight: 600;
+  line-height: 110%;
   text-align: left;
   margin: 4px 0 18px 0;
 }
@@ -238,40 +269,152 @@ body {
   text-align: center;
 }
 
-.masters {
-  margin-bottom: 60px;
-}
-.masters__title {
-  color: #dd9a9a;
-  font-size: 48px;
-  font-weight: 400;
-  line-height: 93.9%;
-  text-align: left;
-  padding-bottom: 37px;
+.masters-main {
+  margin-bottom: 100px;
 }
 
-.master {
+.masters {
+  margin-bottom: 60px;
+  display: flex;
+  gap: 20px;
+}
+.masters__left {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  width: 588px;
+}
+.masters__list {
+  display: flex;
+  gap: 20px;
+}
+.masters__item {
+  width: 550px;
+}
+
+.master__menu {
+  padding-left: 95px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
 }
 .master__link {
+  border-bottom: 1px solid #dd9a9a;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 115.9%;
-  text-align: left;
 }
 .master__link a {
   color: rgb(0, 0, 0);
 }
+.master__title {
+  color: #dd9a9a;
+  font-family: KudryashevDisplay;
+  font-size: 48px;
+  line-height: 93.9%;
+  text-align: left;
+  padding-bottom: 37px;
+}
+.master__name {
+  color: #dd9a9a;
+  font-family: KudryashevDisplay;
+  font-size: 24px;
+  padding-bottom: 15px;
+  text-align: left;
+}
+.master__experience {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-bottom: 43px;
+}
+.master__info {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.reviews {
+  margin-bottom: 30px;
+}
+.reviews .show {
+  display: block;
+  opacity: 1;
+}
+.reviews__main {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.reviews__close {
+  color: #dd9a9a;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.reviews__close:hover {
+  color: #bc3817;
+  cursor: pointer;
+}
+.reviews__button {
+  border: 1px solid;
+}
+.reviews__button:hover {
+  border: 2px solid #c32424;
+}
 
 .contacts {
   margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
 }
 .contacts__title {
   color: #dd9a9a;
+  font-family: KudryashevDisplay;
   font-size: 48px;
   font-weight: 400;
   line-height: 93.9%;
   text-align: left;
   padding-bottom: 37px;
+}
+.contacts__items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+.contacts__items h3 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 110%;
+  text-align: left;
+}
+.contacts__items p {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  padding-top: 10px;
+}
+.contacts__icons {
+  display: flex;
+  flex-direction: row;
+  gap: 23px;
+  padding-top: 10px;
+}
+.contacts__map {
+  box-sizing: border-bo;
+  border: 6px solid #dd9a9a;
+  width: 500px;
+  position: relative;
 }/*# sourceMappingURL=style.css.map */
