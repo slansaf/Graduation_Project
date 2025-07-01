@@ -1,22 +1,21 @@
-let button = document.querySelector('.reviews__button');
-let block = document.querySelector('.reviews__main');  
-let cross = document.querySelector('.reviews__close');
+const reviewsActive = document.querySelector('.reviews__main');
+const button = document.querySelector('.reviews__button');
+const cross = document.querySelector('.reviews__close');
+
+const menuActive = document.querySelector('.header__menu');
+const burger = document.querySelector('.header__burger');
+const menuClose = document.querySelector('.header__cross');
+
+function toggleMenu() {
+    menuActive.classList.toggle('hidden');
+}
  
-button.onclick = function() {
-    if (block.classList.contains("show")){
-        block.classList.remove("show");
-    } else {
-        block.classList.add("show");
-    }
-}
-    
-
-cross.onclick = function() {
-    block.classList.remove("show");
+function toggleReviews() {
+    reviewsActive.classList.toggle('hidden');
 }
 
-window.onclick = function(event) {
-    if (event.target == block) {
-        block.classList.remove("show");
-    }
-}
+burger.addEventListener('click', toggleMenu);
+menuClose.addEventListener('click', toggleMenu);
+
+button.addEventListener('click', toggleReviews);
+cross.addEventListener('click', toggleReviews);
