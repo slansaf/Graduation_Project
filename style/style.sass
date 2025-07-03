@@ -70,13 +70,13 @@ body
          fill: #fff
    &__cross
       background-color: $colorSelectSite
-      height: 80px
+      height: 60px
       display: flex
       justify-content: flex-end
       &:hover path
          fill: #2b7f4e
    &__menu
-      width: 423px
+      width: 323px
       background-color: #F4F2F3
       position: absolute
       top: 95px
@@ -90,7 +90,7 @@ body
       
    &__link
       color: #000
-      font-size: 24px
+      font-size: 18px
       font-weight: 400
       line-height: 29px
       text-align: center
@@ -109,6 +109,7 @@ body
       font-weight: 600
       line-height: 115.9%
       text-align: left
+      letter-spacing: 4px
       padding-top: 191px
    &__icons
       padding-top: 46px
@@ -226,6 +227,8 @@ body
       padding-bottom: 30px
       margin-left: -65px
       margin-right: -65px
+      overflow-x: auto
+
    &__title
       color: $colorSelectSite
       font-family: KudryashevDisplay
@@ -257,6 +260,9 @@ body
       box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
       background: rgb(255, 255, 255)
       padding: 6px 5px 18px 11px
+      flex: 0 0 auto
+      width: 250px
+      text-align: center
    &__price
       color: rgb(0, 0, 0)
       font-size: 20px
@@ -298,15 +304,17 @@ body
       display: flex
       flex-direction: column
       justify-content: space-between
-      width: 588px
+      width: 688px
    &__list
       display: flex
       gap: 20px
    &__item
       width: 550px
+      flex: 1
+
 .master
    &__menu
-      padding-left: 95px 
+      padding-left: 175px 
       display: flex
       flex-direction: column
       gap: 13px
@@ -316,7 +324,7 @@ body
       font-weight: 600
       line-height: 115.9% 
       & a  
-            color: rgb(0, 0, 0)
+         color: rgb(0, 0, 0)
    &__title
       color: $colorSelectSite
       font-family: KudryashevDisplay
@@ -450,25 +458,96 @@ body
       &__links
          gap: 24px
    .products-slider
-      margin-bottom: 60px
+      &__titl
+         font-size: 36px
       &__carousel
          flex-wrap: wrap
          gap: 10px
-         margin-left: 0
-         margin-right: 0
+         margin-left: -30px
+         margin-right: -30px
+      &__
    .product
       &__slide
          width: 200px
+   .masters
+      flex-direction: column
+      align-items: center
+      width: 100%
+      &__left
+         width: 100%
+      &__list
+         justify-content: center
+      &__item
+         width: 100%
+         max-width: 400px
+
+
 @media (max-width: 735px)
    .center
       padding-left: calc( 50% - $widthSitePh / 2 )
       padding-right: calc( 50% - $widthSitePh / 2 )
+
+   .header
+      justify-content: space-around
+      &__contacts
+         display: none
+   .hero
+      &__title
+         padding-top: 211px
+         font-size: 28px  
+   .discount
+      &__name
+         width: 330px
+         gap: 18px
+      &__text
+         width: 150px        
+   .services
+      &__title
+         font-size: 36px
+      &__grid
+         display: flex
+         flex-direction: column
+   .interior
+      &__title
+         font-size: 36px 
+      &__gallery
+         display: flex
+         flex-direction: column
    .products-slider
-      margin-bottom: 60px
+      &__title
+         font-size: 36px
+      &__title-signature
+         font-size: 18px
+      &__btn
+         display: none
       &__carousel
-         flex-wrap: wrap
-         gap: 10px
+         flex-direction: column
+         align-items: center
          margin-left: 0
          margin-right: 0
-
-
+      .product
+         &__slide
+            width: 100%
+            max-width: 300px
+         &__button
+            width: 100%
+            max-width: 200px
+            margin: 0 auto
+   .masters
+      flex-direction: column
+      &__left
+         width: 100%
+      &__list
+         flex-direction: column
+         align-items: center
+      &__item
+         width: 100%
+         min-width: 300px
+   .master
+      &__menu
+         padding-left: 0px 
+         width: 200px
+      &__title
+         font-size: 38px
+   .contacts
+      flex-direction: column
